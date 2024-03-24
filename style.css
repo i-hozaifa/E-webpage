@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+ul{
+    list-style-type: none;
+}
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-link{
+    color: var(--primary-text-color);
+}
+.hover-link:hover{
+    color: var(--accent-color);
+    transition:0.2s,ease-in-out ;
+}
+
+
+.main-nav{
+    margin-top: 20px;
+justify-content: space-between;
+position: relative;
+/* background-color:#436850  ; */
+}
+.logo img{
+    width: 60px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap:40px;
+   
+}
+.nav-toggle{
+    display: none;
+}
+
+/* header section */
+header{
+    padding: 10px var(--padding-inline-section) 0;
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 50vw;
+}
+.header-left p{
+    margin-top: 20px;
+}
+.header-right img{
+    width: 100%;
+}
+.our-service{
+    padding: 60px var(--padding-inline-section);
+}
+.our-service-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.our-service-header p{
+    margin-top: 20px;
+}
+.service-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+
+}
+.service-card{
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    text-align: center;
+   
+}
+.blog{
+   padding: 40px var(--padding-inline-section) 0;
+}
+.blog-head{
+    margin-top: 20px;
+    text-align: center;
+}
+.blog-head p{
+    margin-top: 20px;
+}
+.blog-container{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    gap: 50px;
+}
+.blog-img img{
+width: 350px;
+}
+.blog-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer{
+    margin-top: 20px;
+    padding: 30px 0 20px 0;
+    background-color:#436850 ;
+   color: white;
+}
+.contact-coloumn{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.form-container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-coloumn{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+.link-coloumn a{
+    color: white;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.sub-footer{
+    background-color: #B7E5B4;
+    padding: var(--padding-inline-section);
+}
+.sub-footer-container{
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 991px){
+    h3{
+        font-size: 1.2rem;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-links{
+       position: absolute;
+       background-color: #436850;
+       left: -100%;
+       top: 100%;
+       width: 100%;
+       margin-top: 20px;
+       transition:0.2s ease-out ;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .nav-links ul li a{
+        color: white;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 760px){
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .blog-container{
+        flex-direction: column;
+    }
+    .footer-container{
+       flex-direction: column;
+       gap: 40px;
+       text-align: center;
+       align-items: center;
+    }
+    .contact-coloumn{
+        align-items:stretch;
+    }
+    .link-coloumn{
+        align-items: stretch;
+    }
+
+}
+@media screen and (max-width: 470px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .service-card{
+        min-width: 100%;
+        margin-bottom: 40px;
+    }
+    .blog-head{
+margin-top: 0px;
+    }
+   
+}
