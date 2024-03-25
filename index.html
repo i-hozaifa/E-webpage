@@ -6,12 +6,15 @@
     <title>E-waste</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-querry.css" />
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c39d799466.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
       <div class="container main-nav flex">
         <a href="#" class="logo">
-          <img src="./icons8-waste-sorting-50.png" alt="company logo" />
+          <img src="wintechno logo.jpg" alt="company logo" />
         </a>
         <div class="nav-links" id="nav-links">
           <ul class="flex">
@@ -26,12 +29,48 @@
         <a href="#" class="nav-toggle hover-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
       </div>
     </nav>
+
+
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="slideimg" src="img1.jpg" style="width:100%">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="slideimg" src="img2.jpg" style="width:100%">
+        <!-- <div class="text">Caption Two</div> -->
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="slideimg" src="img3.jpg" style="width:100%">
+        <!-- <div class="text">Caption Three</div> -->
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div><br><br><br>
+
     <header>
       <div class="container header-section flex" id="home-link">
         <div class="header-left">
-          <h1>
-            Reduce,<br />Reuse,<br />Recycle <br />Keep e-waste out of sight!
-          </h1>
+          <h2>
+            Reduce,<br />Reuse,<br />Recycle
+          </h2>
           <p>
             "Don't trash it, recycle your e-waste and make a difference!"<br />"Give
             e-waste a second chance, recycle for a sustainable advance!"<br />"Dispose
@@ -43,6 +82,7 @@
         </div>
       </div>
     </header>
+
     <section class="our-service" id="our-service-link">
       <div class="container">
         <div class="our-service-header">
@@ -85,10 +125,6 @@
       </div>
     </section>
     <section class="blog" id="blog-link">
-      <div class="blog-head">
-        <h2>Blogs</h2>
-        <p>About E-waste</p>
-      </div>
       <div class="container flex blog-container">
         <div class="blog-img">
           <img src="./blog.webp" alt="" />
@@ -103,66 +139,117 @@
             mercury, and cadmium, which can contaminate soil and water sources
             if not disposed of properly.
           </p>
-          <p>
-            To tackle this issue, it's crucial to raise awareness about the
-            importance of recycling e-waste. Many electronics can be refurbished
-            or recycled, reducing the need for raw materials and minimizing
-            environmental impact. Additionally, proper disposal methods ensure
-            that hazardous materials are handled safely, protecting both the
-            environment and human health.
-          </p>
-          <p>
-            As individuals, we can make a difference by properly recycling our
-            old electronics and supporting initiatives that promote responsible
-            e-waste management. By taking action, we can help mitigate the
-            impact of e-waste and create a more sustainable future for
-            generations to come.
-          </p>
         </div>
       </div>
     </section>
-    <footer>
-      <div class="container flex footer-container" id="about-us-link">
-        <a href="#" class="logo">
-          <img src="./icons8-waste-sorting-50.png" alt="" />
-        </a>
-        <div class="contact-coloumn flex">
-          <h4>Contact-Us</h4>
-          <h4><i class="fa-solid fa-square-phone"></i> 1800-00-000</h4>
-          <h4><i class="fa-regular fa-envelope-open"></i> xyz@gmail.com</h4>
-          <h4><i class="fa-brands fa-instagram"></i> @xyzzz</h4>
-          <h4><i class="fa-brands fa-twitter"></i> @tweeter</h4>
-          <h4><i class="fa-brands fa-facebook"></i> xyxxx</h4>
-        </div>
 
-        <div class="form-container flex">
-          <h4>Contact-Us Form</h4>
-          <form action="#" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <input type="submit" value="Submit" />
-          </form>
+    <!--   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      form    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <div id ="contact">
+      <div id="contact-us">
+        <div id="sidebar">
+          <div class="icon-section">
+           <i class="ri-map-pin-2-fill ri-2x icon"></i>
+            <p class="icon-label"> <i class="fa-solid fa-house"></i> Address</p>
+            <p class="examples">Surkhet, NP12</p>
+            <p class="examples">Birendranagar 06</p>
+          </div><br>
+          
+          <div class="icon-section">
+            <i class="ri-phone-fill ri-2x icon"></i>
+            <p class="icon-label"> <i class="fa-solid fa-phone"></i> Phone</p>
+            <p class="examples">+0068 9823 5343</p>
+            <p class="examples">+0068 2323 5343</p>
+          </div><br>
+          
+          <div class="icon-section">
+            <i class="ri-mail-fill ri-2x icon"></i>
+            <p class="icon-label"> <i class="fa-solid fa-envelope"></i> Mail</p>
+            <p class="examples">codinglab@gmail.com</p>
+            <p class="examples">info.codinglab@gmail.com</p>
+          </div><br>
         </div>
-
-        <div class="link-coloumn flex">
-          <h4>Links</h4>
-          <a href="#home-link" class="hover-link">Home</a>
-          <a href="#our-service-link" class="hover-link">Our-Services</a>
-          <a href="#blog-link" class="hover-link">Blog</a>
-          <a href="#about-us-link" class="hover-link">About-us</a>
-        </div>
-      </div>
-    </footer>
-    <div class="sub-footer">
-      <div class="container flex sub-footer-container">
-        <p>&copy; E-Waste Company. All Rights Reserved.</p>
-        <p>Contact us at: contact@ewastecompany.com</p>
+        
+        <div class="seperator"></div>
+        
+        <form action="" id="contact-form">
+          <h2 class="form-header">Send us a message</h2>
+          <!-- <p id="description">If you have any work from me or any queries related to my tutorial, you can send me a message. It's my pleasure to help you.</p> -->
+          
+          <div class="input-section">
+          <input type="text" id="name" class="inputs" placeholder="Enter your name" name="name" required />
+          </div>
+          
+          <div class="input-section">
+          <input type="email" id="email" class="inputs" placeholder="Enter your email" name="email" required />
+          </div>
+          
+          <div class="input-section">
+          <textarea id="question" class="inputs" placeholder="Send us a message"></textarea>
+          </div>
+          
+          <button id="submit" type="submit" value="Send now">Send now</button>
+        </form>
       </div>
     </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx form end xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx footer   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!-- Footer Start -->
+<div class="footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-lg-8">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-link">
+              <h3>Service Area</h3>
+              <a href="">Lorem ipsum</a>
+              <a href="">tempus posuere </a>
+              <a href="">velit id accumsan</a>
+              <a href="">ut porttitor</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-link">
+              <h3>Useful Link</h3>
+              <a href="">Sed pretium</a>
+              <a href="">ultricies turpis at</a>
+              <a href="">Mauris cursus</a>
+              <a href="">consectetur</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-contact">
+              <h3>Get In Touch</h3>
+              <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+              <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+              <p><i class="fa fa-envelope"></i>info@example.com</p>
+              <div class="footer-social">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; All Rights reserved to <a href="#">Wintechno recycling</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+
 
     <script
       src="https://kit.fontawesome.com/6c2328b503.js"
@@ -174,6 +261,36 @@ const navLinks = document.getElementById('nav-links');
 toggleButton.addEventListener('click', () =>{
   navLinks.classList.toggle('active');
 })
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
   </body>
 </html>
